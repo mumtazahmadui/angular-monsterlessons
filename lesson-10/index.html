@@ -1,0 +1,17 @@
+<html ng-app="app">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+<foo-bar></foo-bar>
+<foo-bar></foo-bar>
+<foo-bar></foo-bar>
+
+<script type="text/ng-template" id="bookmarks.html">
+    <div ng-repeat="bookmark in bookmarks">
+        {{ bookmark.id }} {{ bookmark.name }}
+    </div>
+</script>
+</body>
+</html>
